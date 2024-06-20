@@ -14,11 +14,14 @@ const Gallery = ({ posts }) => {
 						return (
 							<div key={key} className="post">
 								<div className="post-overlay-container">
-								<Link to={`/${post.frontmatter.slug}`}>
-									<div className="post-image-container">
-										<img alt={post.frontmatter.imageAlt[0]} src={post.frontmatter.featuredImage.publicURL} />
+									<div className="post-overlay">
+									{post.frontmatter.client}
 									</div>
-								</Link>
+									<Link to={`/${post.frontmatter.slug}`}>
+										<div className="post-image-container">
+											<img alt={post.frontmatter.imageAlt[0]} src={post.frontmatter.featuredImage.publicURL} />
+										</div>
+									</Link>
 								</div>
 							</div>
 						)

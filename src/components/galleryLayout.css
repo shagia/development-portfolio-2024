@@ -8,3 +8,18 @@
 	margin-right: 1.8rem;
 	margin-bottom: 0.5rem;
 }
+
+.post-overlay-container {
+	position: relative;
+}
+
+.post-overlay {
+	position: absolute;
+	display: inline;
+	bottom: 0;
+	padding: 1rem;
+	
+	font-weight: bold;
+	color: white;
+	
+}
