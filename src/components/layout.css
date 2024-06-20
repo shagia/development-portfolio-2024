@@ -83,6 +83,7 @@ h1 > b {
 img {
   border-style: none;
   max-width: 100%;
+  margin: 0;
 }
 code,
 kbd,
@@ -114,7 +115,6 @@ hr {
   box-sizing: inherit;
 }
 hgroup,
-img,
 figure,
 fieldset,
 ul,

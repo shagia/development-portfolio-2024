@@ -7,24 +7,39 @@
 
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Gallery from "./gallery"
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
+    query {
       site {
         siteMetadata {
           title
         }
       }
+      allMdx {
+        nodes {
+          frontmatter {
+            slug
+            date
+            imageAlt
+            featuredImage {
+              publicURL
+            }
+            client
+          }
+        }
+      }
     }
   `)
-
+console.log(data)
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Gallery posts={data.allMdx.nodes}/>
       <div
         style={{
           margin: `0 auto`,

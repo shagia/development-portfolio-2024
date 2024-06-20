@@ -1,0 +1,12 @@
+{
+  "clips" : [
+    {
+      "content" : "<FsLightbox\n\ttoggler={toggler}\n\tsources={[\n\t\tdata.mdx.frontmatter.images[0].publicURL,\n\t\tdata.mdx.frontmatter.images[1].publicURL,\n\t\t\"https:\/\/www.youtube.com\/watch?v=3nQNiWdeH2Q\",\n\t\t\"https:\/\/commondatastorage.googleapis.com\/gtv-videos-bucket\/sample\/BigBuckBunny.mp4\"\n\t]}\n\tslide={1}\n\/>",
+      "name" : "FsLightbox"
+    },
+    {
+      "content" : "\t\t\t\t\t\t\t\t<img src={post.featuredImage.publicURL}\/>\n",
+      "name" : "featuredImage element"
+    }
+  ]
+}
