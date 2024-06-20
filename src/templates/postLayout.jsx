@@ -1,5 +1,5 @@
 import * as React from "react"
-import {useState} from "react"
+import { useState } from "react"
 import { graphql, Link } from "gatsby"
 import { MDXProvider } from "@mdx-js/react"
 import FsLightbox from "fslightbox-react";
@@ -29,18 +29,18 @@ export default function PostLayout({ data, children }) {
 					{children}
 				</MDXProvider>
 				<div className="lightbox-container">
-				{
-					data.mdx.frontmatter.images.map((img, key) => {
-						return (
-							<div className="image-container">
-								<img src={img.publicURL} alt={data.mdx.frontmatter.imageAlt[key]}/>
-								<div className="alt-text">
-									{data.mdx.frontmatter.imageAlt[key]}
+					{
+						data.mdx.frontmatter.images.map((img, key) => {
+							return (
+								<div className="image-container">
+									<img src={img.publicURL} alt={data.mdx.frontmatter.imageAlt[key]} />
+									<div className="alt-text">
+										{data.mdx.frontmatter.imageAlt[key]}
+									</div>
 								</div>
-							</div>
-						)
-					})
-				}
+							)
+						})
+					}
 				</div>
 				<footer
 					style={{

@@ -35,11 +35,11 @@ const Layout = ({ children }) => {
       }
     }
   `)
-console.log(data)
+  console.log(data)
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <Gallery posts={data.allMdx.nodes}/>
+      <Gallery posts={data.allMdx.nodes} />
       <div
         style={{
           margin: `0 auto`,
