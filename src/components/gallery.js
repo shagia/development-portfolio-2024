@@ -5,7 +5,6 @@ const Gallery = ({ posts }) => {
 	console.log(posts)
 	return (
 		<>
-			<div>test</div>
 			<div className="lightbox-container">
 			{
 				posts.map((post, key) => {

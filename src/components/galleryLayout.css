@@ -2,3 +2,9 @@
 	display: flex;
 	flex-direction: row;
 }
+
+.post {
+	margin-left: 1.8rem;
+	margin-right: 1.8rem;
+	margin-bottom: 0.5rem;
+}
